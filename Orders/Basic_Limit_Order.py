@@ -32,7 +32,7 @@ Returns: Remaining cash after trade
 """
 Places a limit order and returns reamining cash to you.
 
-Requires Globals: context.trade_fees
+Requires Globals: context.trade_fees, context.limit_order_is_tracing
 Requires: data, context, stock, num_shares, limit_perc, available_cash
 Returns: Remaining cash after trade
 """
