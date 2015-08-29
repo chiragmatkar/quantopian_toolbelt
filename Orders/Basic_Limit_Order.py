@@ -41,6 +41,6 @@ def place_limit_order(data, context, stock, num_shares, limit_perc, available_ca
         limit_price = data[stock].price * limit_perc
         order(stock, num_shares, style=LimitOrder(limit_price))
         if context.limit_order_is_tracing:
-            log.info(stock.symbol + " - Placing Limit Order, current price: " + str(data[stock].price) + " buy price: " + str(limit_price))
+            log.info(stock.symbol + " - Placing Limit Order for " + str(num_shares) +" shares -- current price: " + str(data[stock].price) + " buy price: " + str(limit_price))
         return available_cash + -((num_shares * data[stock].price) + context.trade_fees)
 
