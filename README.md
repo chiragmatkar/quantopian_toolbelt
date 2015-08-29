@@ -10,6 +10,7 @@ A library of handy [Quantopian](https://www.quantopian.com/home) tools.
     - Required Global Variables
     - Required Inputs
     - Output
+- Provide a brief example of usage
 
 ### Contributing
 - Create an [issue](https://github.com/philosowaffle/quantopian_toolbelt/issues)
