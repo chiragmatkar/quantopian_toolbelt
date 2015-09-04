@@ -17,7 +17,7 @@ def initialize(context):
 
 # Will be called on every trade event for the securities you specify.
 def handle_data(context, data):
-    print context.stock.symbol + " moving average recommendation: " + str(determine_willer_recommendation(context, data, context.stock))
+    print context.stock.symbol + " willer recommendation: " + str(determine_willer_recommendation(context, data, context.stock))
 
 """
 Determine if the Willer %R recommends a buy or a sell.
